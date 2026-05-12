@@ -1,0 +1,29 @@
+# ambiente virtual
+.venv/
+venv/
+
+# variaveis de ambiente
+.env
+
+# cache python
+pycache/
+__pycache__/
+*.pyc
+.pytest_cache/
+.cache/
+
+.vscode/
+
+# arquvios do sistema
+.DS_Store
+Thumbs.db
+
+# dados temporarios e parquet
+data/bronze/*.json
+data/silver/*.json
+data/bronze/*.csv
+
+data/silver/*.parquet
+data/gold/*.parquet
+
+.uv/

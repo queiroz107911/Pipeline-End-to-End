@@ -92,7 +92,7 @@ uv sync
 Cria o arquivo `config/.env`:
 
 ```env
-API_URL=https://api.open-meteo.com/v1/forecast?latitude=-15.78&longitude=-47.93&hourly=temperature_2m,precipitation,wind_speed_10m
+API_URL=[documentação da Open-Meteo](https://open-meteo.com/en/docs)
 ```
 
 ### 3. Rodar o pipeline
@@ -158,16 +158,3 @@ tests/unit/test_transform.py::test_silver_to_gold_precipitacao_total_correta PAS
 
 **Localização:** Brasília, DF (-15.78, -47.93)
 **Frequência:** Horária (168 registros por semana)
-
----
-
-## 🗺️ Roadmap
-
-- [x] Pipeline Bronze / Silver / Gold
-- [x] Testes unitários e de integração
-- [x] Logging estruturado
-- [x] Variáveis de ambiente com `.env`
-- [ ] Docker funcionando (pendente virtualização)
-- [ ] Orquestração com Airflow ou Prefect
-- [ ] Transformações declarativas com dbt
-- [ ] Migração para nuvem (S3 + BigQuery)
